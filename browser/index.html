@@ -5,6 +5,7 @@
     <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="/bootstrap-dark.css" rel="stylesheet" />
     <link href="/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="/angular/angular.js" defer></script>
     <script src="/angular-ui-router/release/angular-ui-router.js" defer></script>
     <script src="/js/module.js" defer></script>
@@ -29,12 +30,12 @@
         <sidebar ng-controller="SidebarCtrl">
           <img src="juke.svg" class="logo">
           <section>
-            <h4 class="playlist-item active">
+            <h4 ui-sref-active="active" class="playlist-item">
               <a ui-sref="albumList">ALBUMS</a>
             </h4>
           </section>
           <section>
-            <h5 class="playlist-item">
+            <h5 ui-sref-active="active" class="playlist-item">
               <a ui-sref="artistList">ARTISTS</a>
             </h5>
           </section>
